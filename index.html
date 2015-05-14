@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,target-densitydpi=device-dpi" />
+        <link rel="apple-touch-icon" href="img/app_icon-small.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/app_icon-small.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/app_icon-retina.png">
+    <link rel="apple-touch-startup-image" href="img/bg2.jpg" />
+    <meta name='apple-mobile-web-app-status-bar-style' content='black' /> 
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+        <title>Ritz</title>
+        <style>
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed,
+            figure, figcaption, footer, header, hgroup,
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1; -webkit-tap-highlight-color:rgba(0,0,0,0); background:url(img/bg2.jpg) no-repeat; width:1024px; height:768px; overflow:hidden;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        
+        
+        /* HTML5BP:
+         These selection declarations have to be separate.
+         No text-shadow: twitter.com/miketaylr/status/12228805301
+         Also: hot pink. */
+        ::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+        ::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+        /**
+         * @author Hakim El Hattab
+         */
+        
+        
+        
+        
+        /*********************************************
+         * GLOBAL STYLES
+         *********************************************/
+        
+        html, body {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            
+            -webkit-user-select: none;
+            font-size: 60px;
+            
+            /*background:url(dim-landing.png) no-repeat #000 ;*/
+            color: #999;
+            
+            width: 1024px;
+            height: 748px;
+            
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight:normal;
+            /*background:url(bg.jpg);overflow:hidden;
+             
+             background-image: -webkit-gradient(
+             radial,
+             50% 50%, 0,
+             50% 50%, 1000,
+             from(rgba(245,245,245,1.0)),
+             to(rgba(100,100,100,1.0))
+             );.*/
+        }
+        .app{ width:1024px; height:768px; position:relative;}
+        .flrBtn{
+            display: block;
+            width: 130px;
+            height: 76px;
+            position: absolute;
+            left: 647px;
+            top: 123px;
+        }
+        
+        #flr10{
+            top: 515px;
+            left: 138px;
+            background: url(img/10.png) no-repeat;
+        }
+        #flr12{
+            top: 515px;
+            left: 339px;
+            background: url(img/12.png) no-repeat;
+        }
+        #flr15{
+            top: 515px;
+            left: 539px;
+            background: url(img/15.png) no-repeat;
+        }
+        #flr17{
+            top: 515px;
+            left: 741px;
+            background: url(img/17.png) no-repeat;
+        }
+        #flr19{
+            top: 425px;
+            left: 140px;
+            background: url(img/19.png) no-repeat;
+        }
+        #flr21{
+            top: 424px;
+            left: 339px;
+            background: url(img/21.png) no-repeat;
+        }
+        #flr23{
+            top: 424px;
+            left: 538px;
+            background: url(img/23.png) no-repeat;
+        }
+        #flr25{
+            top: 423px;
+            left: 740px;
+            background: url(img/25.png) no-repeat;
+        }
+        #flr27{
+            top: 332px;
+            left: 138px;
+            background: url(img/27.png) no-repeat;
+        }
+        #flr29{
+            top: 333px;
+            left: 338px;
+            background: url(img/29.png) no-repeat;
+        }
+        #flr31{
+            top: 332px;
+            left: 538px;
+            background: url(img/31.png) no-repeat;
+        }
+        #flr33{
+            top: 332px;
+            left: 740px;
+            background: url(img/33.png) no-repeat;
+        }
+        #flr35{
+            top: 229px;
+            left: 243px;
+            background: url(img/35.png) no-repeat;
+        }
+        #flr36{
+            top: 229px;
+            left: 445px;
+            background: url(img/36.png) no-repeat;
+        }
+        #flr39{
+            top: 229px;
+            left: 643px;
+            background: url(img/37.png) no-repeat;
+        }
+        
+            </style>
+    </head>
+    <body>
+        <div class="app">
+            <a href="javascript:void(0)" onClick="ShowFloor('10')" class="flrBtn" id="flr10"></a>
+            <a href="javascript:void(0)" onClick="ShowFloor('12')" class="flrBtn" id="flr12"></a>
+            <a href="javascript:void(0)" onClick="ShowFloor('15')" class="flrBtn" id="flr15"></a>
+            <a href="javascript:void(0)" onClick="ShowFloor('17')" class="flrBtn" id="flr17"></a>
+            <a href="javascript:void(0)" onClick="ShowFloor('19')" class="flrBtn" id="flr19"></a>
+            <a href="javascript:void(0)" onClick="ShowFloor('21')" class="flrBtn" id="flr21"></a>
+            <a href="javascript:void(0)" onClick="ShowFloor('23')" class="flrBtn" id="flr23"></a>
+            <a href="javascript:void(0)" onClick="ShowFloor('25')" class="flrBtn" id="flr25"></a>
+            <a href="javascript:void(0)" onClick="ShowFloor('27')" class="flrBtn" id="flr27"></a>
+            <a href="javascript:void(0)" onClick="ShowFloor('29')" class="flrBtn" id="flr29" ></a>
+            <a href="javascript:void(0)" onClick="ShowFloor('31')" class="flrBtn" id="flr31"></a>
+            <a href="javascript:void(0)" onClick="ShowFloor('33')" class="flrBtn" id="flr33"></a>
+            <a href="javascript:void(0)" onClick="ShowFloor('35')" class="flrBtn" id="flr35"></a>
+            <a href="javascript:void(0)" onClick="ShowFloor('36')" class="flrBtn" id="flr36"></a>
+            <a href="javascript:void(0)" onClick="ShowFloor('39')" class="flrBtn" id="flr39"></a>
+            
+            <img src="img/blank.gif" width="760px" height="85px" usemap="#Map2" style="position: absolute; bottom: 103px; left: 129px; height: 61px; z-index: 9999" />
+            <map name="Map2" >
+                <area shape="rect" coords="607,2,752,72" href="javascript:void(0)" onClick="ShowFloor('200')">
+                    <area shape="rect" coords="20,7,134,50" href="javascript:void(0)" onClick="ShowFloor('100')" >
+                        </map>
+        </div>
+        <script src="js/jquery.1.7.1.min.js"></script>
+        <!--
+         
+         Test IP : 192.168.1.101
+         Live IP: 192.168.1.178
+         
+        <script src="http://192.168.1.101:1234/socket.io/socket.io.js"></script>
+        <script src="http://192.168.1.101:1234/cordova-2.0.0.js"></script>
+     
+       
+          -->
+       
+   		<script src="http://192.168.1.178:1234/socket.io/socket.io.js"></script>
+        <script src="http://192.168.1.178:1234/cordova-2.0.0.js"></script>
+       
+        
+        
+        <script type="text/javascript">
+           
+            var transmit = false;
+            
+            var socket = new io.connect('192.168.1.178:1234');
+			//var socket = new io.connect('192.168.1.101:1234');
+            var ID;
+            socket.on('connect', function(){
+                      socket.emit('init', 1);
+                      
+                      socket.on('ID', function(data){
+                                ID = data;
+                                });
+                      
+                      socket.on('message', function(message){
+                                //
+                                });
+                      
+                      socket.on('disconnect', function(){
+                                //
+                                });
+                      
+                      });
+                      
+                      
+                      
+                      
+                      
+                      
+                      var cBtn;
+                      function ShowFloor(flr){
+                          
+                          if(flr == "100"){
+                              $('body').css("background","url(img/bg.jpg) no-repeat")
+                          }
+                          if(flr == "200" ){
+                              $('body').css("background","url(img/bg2.jpg) no-repeat")
+                          }
+                          if(cBtn != flr){
+                              $(".flrBtn").css("background-position","0 0")
+                              $("#flr"+flr).css("background-position","0 -76px")
+                              cBtn = flr
+                          }else{
+                              $(".flrBtn").css("background-position","0 0")
+                          }
+                          
+                          flrtolight = flr;
+                          switch(flr){
+                              case "25":
+                              flrtolight = "f25"
+                              break;
+                              case "36":
+                              flrtolight = "37";
+                              break;
+                              case "39":
+                              flrtolight = "38";
+                              break;
+                          }
+                          
+                          
+                          socket.emit('input', flr);
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                      }
+        
+        
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+        </script>
+    </body>
+</html>
